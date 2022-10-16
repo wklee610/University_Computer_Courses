@@ -1,0 +1,25 @@
+HOW TO EXECUTE FILES
+
+ENVIRONMENT = Ubuntu 20.04 LTS / PYTHON 3.8+
+
+1. OPEN TWO TERMINAL.
+
+2. GO INTO FOLDER WHERE "server.py" and "client.py" PLACED.
+
+3. IN THE FIRST TERMINAL, TYPE "python server.py"
+
+4. AFTER FOLLOW 3, IN THE SECOND TERMINAL, TYPE "python client.py"
+
+
+
+USE DIG TO TEST
+
+1. OPEN TWO TERMINAL.
+
+2. GO INTO FOLDER WHERE "server.py" and "client.py" PLACED.
+
+3. IN THE FIRST TERMINAL, TYPE "python server.py"
+
+4. AFTER FOLLOW 3, IN THE SECOND TERMINAL, TYPE "dig www.baidu.com @127.0.0.1 -p 1234"
+
+
