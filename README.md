@@ -1,4 +1,4 @@
-# .UnivClass
+# University_Computer_Courses
  University Classes in cuhk / cuhksz
 
 csc1001 = Introduction to Computer Science: Programming Methodology (Python)  
