@@ -7,7 +7,6 @@ import all_instruction
 ll = all_instruction.ll
 reg_dict = all_instruction.reg_dict
 
-
 def R_hdl(line):            
     global reg_dict                 
     instruction_name = labelTable.R_cd.get(line[26: 32])                
@@ -22,10 +21,6 @@ def R_hdl(line):
         temp_instruction['rd'] = labelTable.reg_num[rd]             
         temp_instruction['sa'] = int(line[21: 26], 2)               
     return R_instruction.R_main(temp_instruction, reg_dict)                     
-
-
-
-
 
 
 def I_hdl(line, opcode):                        
@@ -43,21 +38,12 @@ def I_hdl(line, opcode):
     return I_instruction.I_main(temp_instruction, reg_dict)                     
 
 
-
-
-
-
 def J_hdl(line, name):                  
     global reg_dict                 
     temp_instruction = dict()                   
     temp_instruction['instruction_name'] = name                 
     temp_instruction['target'] = int(line[6:], 2)               
     return J_instruction.J_main(temp_instruction)                           
-
-
-
-
-
 
 
 def main_handle(ll, start=0, end=0):                    
@@ -85,9 +71,7 @@ def main_handle(ll, start=0, end=0):
             if temp_mem:                
                 main_handle(ll, temp_mem, len(ll))              
                 print(temp_mem)                     
-                break                   
-
-                                    
+                break                    
 
 def fileopen(file_addr='fib.asm'):                  
     open_file = open(file_addr, 'r')                    
