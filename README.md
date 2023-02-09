@@ -1,4 +1,4 @@
-# .UnivClass
+# University_Computer_Courses
  University Classes in cuhk / cuhksz
 
 csc1001 = Introduction to Computer Science: Programming Methodology (Python)  
@@ -9,7 +9,7 @@ csc3150 = Operation Systems (C++)
 csc4005 = Distributed and Parallel Computing (C++)    
 csc3100 = Data Structure (Java)  
 csc3170 = Database (Mysql)  
-csc4001 = Software Engineering (Frontend & Backend)  
+csc4001 = Software Engineering (Frontend & Backend) -> check (wklee610/csc4001 repo)  
 csc4008 = Techniques for Data Mining, Machine Learning (Python)  
 csc4160 = Cloud Computing (Python)  
 ece4016 = Computer Networks (Python)  
