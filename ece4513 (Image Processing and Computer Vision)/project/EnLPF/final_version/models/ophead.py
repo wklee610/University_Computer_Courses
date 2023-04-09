@@ -988,7 +988,7 @@ class OPAM_DualAttn_Module(Module):
         return x
 
 
-# normal attention 其实是non-local
+# normal attention
 class OPAM_Norm_Module(Module):
     def __init__(self, in_dim, one_hot_cls_num, arch):
         super(OPAM_Norm_Module, self).__init__()
