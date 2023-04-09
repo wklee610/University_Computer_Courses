@@ -141,7 +141,7 @@ def test(segmentation_module, loader, gpu):
             feature = async_copy_to(feature, gpu)
             # (304, 304), (376, 376), (456, 456), (528, 528), (600, 600)
             # (300, 375, 450, 525, 600)
-            # 多尺度预测, score结果取平均
+
             for img in img_resized_list:
                 feed_dict = batch_data.copy()
                 feed_dict['img_data'] = img
@@ -153,7 +153,7 @@ def test(segmentation_module, loader, gpu):
                 if args.onehot_matrix != '':
                     feature = feature + pred_tmp_feature_map / len(cfg.DATASET.imgSizes)
                 scores = scores + pred_tmp / len(cfg.DATASET.imgSizes)
-            # 最大值索引
+
             s, pred = torch.max(scores, dim=1)
             if args.onehot_matrix != '':
                 obj_matrix_map = torch.zeros(cfg.DATASET.num_class, channels)
@@ -178,7 +178,7 @@ def test(segmentation_module, loader, gpu):
 
         pred = np.int32(pred)
         pixs = pred.size
-        # 得到去重的及各自个数
+
         uniques, counts = np.unique(pred, return_counts=True)
         things = [0] * 150
         pred_labels = []
