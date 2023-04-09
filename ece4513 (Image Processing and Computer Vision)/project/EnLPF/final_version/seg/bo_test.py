@@ -20,7 +20,7 @@ for k,v in ff.items():
 print(c)
 
 '''
-p = '/home/data/cenj/bomiao/camera_cls/data/datasets/places365_train_2/'
+p = '/home/data/cenj/hajun/camera_cls/data/datasets/places365_train_2/'
 img = get_img_list(p)
 
 print(len(set(img)))
