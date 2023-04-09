@@ -67,7 +67,7 @@ def visualize_result(pred, cfg, index):
     # print predictions in descending order
     pred = np.int32(pred)
     pixs = pred.size
-    # 得到去重的及各自个数
+
     uniques, counts = np.unique(pred, return_counts=True)
     things=[0]*150
     nm = []
